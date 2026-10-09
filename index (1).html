@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffe5ef">
+<title>رسالة صغيرة لياسمين ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:linear-gradient(145deg,#fff0f5,#fff8fb,#ffe0ec);color:#71384e;min-height:100vh;overflow-x:hidden}
+.wrap{max-width:720px;margin:auto;padding:22px 15px 55px}.hero,.card{background:#ffffffd9;border:1px solid #ffd1e1;border-radius:25px;padding:24px 20px;margin:15px 0;text-align:center;box-shadow:0 12px 35px #a34d6b17;position:relative}
+h1{font-size:clamp(25px,6vw,38px);margin:8px 0 12px;color:#c43e70}h2{color:#c43e70;margin:8px 0 12px}p{line-height:1.9;font-size:17px}.small{font-size:13px;color:#9b6a7d}
+button{border:0;border-radius:999px;padding:12px 19px;background:#d84e83;color:white;font-size:16px;cursor:pointer;margin:5px;box-shadow:0 5px 14px #d84e8330}button.secondary{background:#fff;color:#b43b6b;border:1px solid #f2b6cd}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0}.gallery img{width:100%;height:180px;object-fit:cover;border-radius:17px;border:3px solid white;box-shadow:0 5px 15px #9b47601c}
+.heart{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:float 8s linear forwards;opacity:.65}@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.content{position:relative;z-index:1}.hidden{display:none}
+@media(max-width:440px){.gallery img{height:135px}.hero,.card{padding:20px 14px}}
+</style></head>
+<body><div class="content wrap">
+<section class="hero"><div style="font-size:38px">💗 🌷 💗</div><h1>أهلًا يا ياسمين</h1><p>عملتلك حاجة بسيطة ولطيفة، أتمنى تعجبك 😊</p><button onclick="showMessage()">افتحي الرسالة 💌</button></section>
+<section id="message" class="card hidden"><h2>رسالة صغيرة ليكي ✉️</h2><p>يا ياسمين، حبيت أعملك حاجة مختلفة وبسيطة كده 😊 مبسوط إننا اتعرفنا، وإن شاء الله تبقى معرفة لطيفة وصحوبية حلوة، وكل يوم ليكي يكون فيه حاجة تفرّحك.</p><p>خديها كتحية بسيطة من صاحب جديد 🌿</p><button onclick="document.getElementById('photos').scrollIntoView({behavior:'smooth'})">التالي ↓</button></section>
+<section class="card" id="photos"><h2>شوية حاجات حلوة 🌿</h2><p>أتمنى أيامك تبقى هادية وجميلة، ومليانة أخبار حلوة ونجاحات وحاجات تخلّيكي تبتسمي.</p>
+<div class="gallery">
+<img loading="lazy" alt="منظر طبيعي وقت الشروق" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=700&auto=format&fit=crop&q=80">
+<img loading="lazy" alt="بحيرة وجبال هادئة" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700&auto=format&fit=crop&q=80">
+<img loading="lazy" alt="طبيعة خضراء" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&auto=format&fit=crop&q=80">
+<img loading="lazy" alt="طريق وسط الأشجار" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=700&auto=format&fit=crop&q=80">
+<img loading="lazy" alt="زهور وردية" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=700&auto=format&fit=crop&q=80">
+<img loading="lazy" alt="سماء جميلة" src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=700&auto=format&fit=crop&q=80">
+</div>
+<p>أتمنالك التوفيق في كل حاجة، وإن شاء الله نعرف بعض أكتر وتبقى بينا صحوبية جميلة ومحترمة. ☀️</p></section>
+<section class="card"><h2>🎵 موسيقى هادية</h2><p>اضغطي الزر لتشغيل نغمة بسيطة من الصفحة. الصوت يبدأ بعد الضغط فقط.</p><button id="music" onclick="toggleMusic()">▶ تشغيل النغمة</button><p class="small">ملاحظة: دي نغمة بسيطة مدمجة في الصفحة، مش ملف أغنية خارجية.</p></section>
+<section class="hero"><h2>دي كانت المفاجأة الصغيرة 😄</h2><p>أتمنالك نجاح وراحة بال في كل اللي بتعمليه، وأيام مليانة حاجات حلوة وابتسامات ❤️</p><button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">ابدئي من الأول ↻</button></section>
+<p class="small" style="text-align:center">رسالة بسيطة لياسمين 💗</p></div>
+<script>
+function showMessage(){document.getElementById('message').classList.remove('hidden');document.getElementById('message').scrollIntoView({behavior:'smooth'});}
+setInterval(()=>{let h=document.createElement('div');h.className='heart';h.textContent=['💗','💕','❤️','🌸'][Math.floor(Math.random()*4)];h.style.left=Math.random()*95+'vw';h.style.fontSize=(18+Math.random()*22)+'px';h.style.animationDuration=(6+Math.random()*5)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),11000)},650);
+let ctx=null,osc=[],playing=false,timer=null;
+function toggleMusic(){if(playing){osc.forEach(o=>{try{o.stop()}catch(e){}});osc=[];clearInterval(timer);playing=false;document.getElementById('music').textContent='▶ تشغيل النغمة';return;}
+try{ctx=new (window.AudioContext||window.webkitAudioContext)();playing=true;document.getElementById('music').textContent='Ⅱ إيقاف النغمة';let notes=[523.25,659.25,783.99,659.25,587.33,698.46,783.99,698.46];let i=0;function note(){if(!playing)return;let o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=notes[i%notes.length];g.gain.setValueAtTime(.0001,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.07,ctx.currentTime+.04);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.32);o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.34);osc=[o];i++;}note();timer=setInterval(note,390)}catch(e){alert('المتصفح لا يدعم تشغيل الصوت. جربي فتح الملف بمتصفح Chrome.');}}
+</script></body></html>
